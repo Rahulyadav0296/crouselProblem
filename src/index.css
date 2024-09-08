@@ -1,0 +1,30 @@
+/* <div className="images-data">
+      <button onClick={handlePrev} className="prev">
+        Prev
+      </button>
+      {images.map((image, index) => (
+        <div key={index} className="image-items">
+          <img src={image} alt={index} className="image-item" />
+        </div>
+      ))}
+      <button onClick={handleNext} className="next">
+        Next
+      </button>
+    </div> */
+
+.images-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-items {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1px solid black;
+}
+
+.image-item {
+  width: 250px;
+  height: 250px;
+}
